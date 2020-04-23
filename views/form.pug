@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  h1 Post Message
+  form(action="/new" method="POST")
+    input(type="text" name="user" placeholder="Name" required)
+    input(type="text" name="messageText" placeholder="Message" required)
+    button.btn.btn-primary(type='submit') Submit
